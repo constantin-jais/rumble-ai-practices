@@ -4892,8 +4892,10 @@ dependencies = [
  "rumble-ai-practices-content",
  "rumble-ai-practices-domain",
  "rumble-ai-practices-session",
+ "rumble-ai-practices-store",
  "serde",
  "serde_json",
+ "sqlx",
  "tokio",
 ]
 
