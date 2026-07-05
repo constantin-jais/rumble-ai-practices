@@ -188,6 +188,10 @@ pub fn router_with_static(state: ApiState, web_root: PathBuf) -> Router {
 
     api_routes(state)
         .route("/sw.js", get(service_worker_js))
+        // the DSI landing (a served page, not an API endpoint), same-origin so its
+        // linked stylesheet passes the strict CSP
+        .route("/organisations", get(organisations_page))
+        .route("/organisations.css", get(organisations_css))
         .fallback_service(fallback)
         .layer(DefaultBodyLimit::max(16 * 1024))
         .layer(middleware::from_fn(security_headers))
@@ -209,6 +213,24 @@ async fn service_worker_js() -> impl IntoResponse {
             HeaderValue::from_static("/"),
         )],
         include_str!("../../../apps/web/assets/sw.js"),
+    )
+}
+
+/// The DSI landing (`/organisations`): a standalone marketing page served on the
+/// single-origin router. It is self-contained via a linked stylesheet so the
+/// strict CSP (`style-src 'self'`, no inline) is respected.
+async fn organisations_page() -> impl IntoResponse {
+    (
+        [(CONTENT_TYPE, "text/html; charset=utf-8")],
+        include_str!("../../../apps/web/assets/organisations.html"),
+    )
+}
+
+/// The DSI landing's stylesheet, served from 'self' (CSP-compatible).
+async fn organisations_css() -> impl IntoResponse {
+    (
+        [(CONTENT_TYPE, "text/css; charset=utf-8")],
+        include_str!("../../../apps/web/assets/organisations.css"),
     )
 }
 
@@ -792,6 +814,56 @@ mod tests {
         let body = to_bytes(response.into_body(), usize::MAX).await.unwrap();
         let html = String::from_utf8(body.to_vec()).unwrap();
         assert!(html.contains("spa-fixture"));
+    }
+
+    #[tokio::test]
+    async fn organisations_landing_is_served_self_contained_under_csp() {
+        let state = ApiState::new(vec![question()]);
+        let app = router_with_static(state, temp_webroot());
+
+        // the page: 200, text/html, key content, and the strict CSP still applies
+        let page = app
+            .clone()
+            .oneshot(
+                Request::builder()
+                    .method(Method::GET)
+                    .uri("/organisations")
+                    .body(Body::empty())
+                    .unwrap(),
+            )
+            .await
+            .unwrap();
+        assert_eq!(page.status(), StatusCode::OK);
+        assert_eq!(
+            page.headers().get("content-type").unwrap(),
+            "text/html; charset=utf-8"
+        );
+        assert!(page.headers().contains_key("content-security-policy"));
+        let body = to_bytes(page.into_body(), usize::MAX).await.unwrap();
+        let html = String::from_utf8(body.to_vec()).unwrap();
+        assert!(html.contains("Pour les organisations"));
+        // self-contained via a same-origin linked stylesheet…
+        assert!(html.contains(r#"href="/organisations.css""#));
+        // …and NO inline style/script, which the CSP (style-src/script-src 'self') would block
+        assert!(!html.contains("<style"));
+        assert!(!html.contains("<script"));
+
+        // the stylesheet: 200, text/css
+        let css = app
+            .oneshot(
+                Request::builder()
+                    .method(Method::GET)
+                    .uri("/organisations.css")
+                    .body(Body::empty())
+                    .unwrap(),
+            )
+            .await
+            .unwrap();
+        assert_eq!(css.status(), StatusCode::OK);
+        assert_eq!(
+            css.headers().get("content-type").unwrap(),
+            "text/css; charset=utf-8"
+        );
     }
 
     #[tokio::test]

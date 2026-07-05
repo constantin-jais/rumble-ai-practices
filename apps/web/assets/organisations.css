@@ -1,0 +1,341 @@
+/* Rumble — DSI landing (/organisations).
+ *
+ * Standalone page served under a strict CSP (style-src 'self'): no inline style,
+ * so the whole sheet lives here. The tokens mirror apps/web/assets/tokens.css
+ * (the Portal design system) — kept in sync by hand because a marketing page is
+ * a separate served concern and must render self-contained. Calm, not gamified. */
+
+:root {
+  --ink: #171a21;
+  --board: #1e222c;
+  --well: #262b37;
+  --edge: #333a49;
+  --text: #e8e2d4;
+  --muted: #9aa2b1;
+  --brass: #c8925a;
+  --brass-ink: #171a21;
+  --juste: #5fb79a;
+
+  --font-mono:
+    ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code", Menlo, Consolas,
+    monospace;
+  --font-serif: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --sp-sm: 8px;
+  --sp-md: 16px;
+  --sp-lg: 24px;
+  --sp-xl: 40px;
+  --sp-2xl: 72px;
+  --radius: 12px;
+  --radius-lg: 16px;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --ink: #ece5d6;
+    --board: #e2dbc9;
+    --well: #f3eee1;
+    --edge: #cbc2ab;
+    --text: #23262e;
+    --muted: #5f594c;
+    --brass: #76501f;
+    --brass-ink: #f3eee1;
+    --juste: #1a5c43;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.55;
+  /* a faint grid: evokes the exercise sheet, like the app hero */
+  background-image:
+    linear-gradient(var(--edge) 1px, transparent 1px),
+    linear-gradient(90deg, var(--edge) 1px, transparent 1px);
+  background-size: 44px 44px;
+  background-position: center top;
+  background-attachment: fixed;
+}
+
+/* masthead */
+.mkt-mast {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-md);
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: var(--sp-lg);
+}
+.mkt-brand {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.mkt-brand b {
+  color: var(--text);
+}
+.mkt-link {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--brass);
+  text-decoration: none;
+}
+.mkt-link:hover {
+  text-decoration: underline;
+}
+
+/* layout */
+.mkt {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0 var(--sp-lg) var(--sp-2xl);
+}
+.mkt-section {
+  margin-top: var(--sp-2xl);
+}
+
+/* hero */
+.mkt-hero {
+  padding: var(--sp-2xl) 0 var(--sp-xl);
+  max-width: 46rem;
+}
+.mkt-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin: 0 0 var(--sp-md);
+}
+.mkt-title {
+  font-family: var(--font-serif);
+  font-size: clamp(32px, 5.5vw, 56px);
+  line-height: 1.08;
+  font-weight: 600;
+  text-wrap: balance;
+  margin: 0 0 var(--sp-lg);
+}
+.mkt-lede {
+  font-size: clamp(17px, 2.3vw, 21px);
+  color: var(--muted);
+  max-width: 42ch;
+  margin: 0 0 var(--sp-xl);
+}
+.mkt-honesty {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  opacity: 0.85;
+  margin: var(--sp-lg) 0 0;
+  max-width: 52ch;
+}
+
+/* buttons */
+.mkt-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-md);
+}
+.mkt-btn {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 13px 22px;
+  border-radius: var(--radius);
+  border: 1px solid transparent;
+  transition:
+    transform 0.16s cubic-bezier(0.2, 0.75, 0.3, 1),
+    background 0.16s ease;
+}
+.mkt-btn:active {
+  transform: translateY(1px);
+}
+.mkt-btn-primary {
+  background: var(--text);
+  color: var(--ink);
+}
+.mkt-btn-primary:hover {
+  background: var(--brass);
+  color: var(--brass-ink);
+}
+.mkt-btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--edge);
+}
+.mkt-btn-ghost:hover {
+  border-color: var(--brass);
+  color: var(--brass);
+}
+
+/* headings */
+.mkt-h2 {
+  font-family: var(--font-serif);
+  font-size: clamp(24px, 3.6vw, 34px);
+  line-height: 1.15;
+  font-weight: 600;
+  text-wrap: balance;
+  margin: 0 0 var(--sp-lg);
+  max-width: 30ch;
+}
+
+/* problem cards */
+.mkt-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--sp-md);
+}
+.mkt-card {
+  background: var(--board);
+  border: 1px solid var(--edge);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-lg);
+}
+.mkt-card-title {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin: 0 0 var(--sp-sm);
+}
+.mkt-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+/* approach facts */
+.mkt-facts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1px;
+  background: var(--edge);
+  border: 1px solid var(--edge);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.mkt-facts li {
+  display: grid;
+  grid-template-columns: minmax(160px, auto) 1fr;
+  gap: var(--sp-lg);
+  align-items: baseline;
+  padding: var(--sp-lg);
+  background: var(--board);
+}
+.mkt-k {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--brass);
+}
+
+/* steps */
+.mkt-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--sp-lg);
+}
+.mkt-steps li {
+  display: flex;
+  gap: var(--sp-md);
+  align-items: flex-start;
+}
+.mkt-steps p {
+  margin: 0;
+  color: var(--muted);
+}
+.mkt-step-n {
+  flex: none;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--brass);
+  color: var(--brass);
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+/* "what it is not" */
+.mkt-nots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--sp-md);
+}
+.mkt-nots li {
+  padding: var(--sp-md) var(--sp-lg);
+  border-left: 2px solid var(--juste);
+  color: var(--text);
+  background: var(--board);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+/* final CTA */
+.mkt-final {
+  margin-top: var(--sp-2xl);
+  padding: var(--sp-2xl) var(--sp-lg);
+  text-align: center;
+  border-top: 1px solid var(--edge);
+}
+.mkt-final-title {
+  font-family: var(--font-serif);
+  font-size: clamp(24px, 4vw, 38px);
+  font-weight: 600;
+  text-wrap: balance;
+  margin: 0 0 var(--sp-xl);
+}
+.mkt-final .mkt-cta-row {
+  justify-content: center;
+}
+
+/* footer */
+.mkt-foot {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: var(--sp-lg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--sp-sm);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+  border-top: 1px solid var(--edge);
+}
+
+@media (max-width: 560px) {
+  .mkt-facts li {
+    grid-template-columns: 1fr;
+    gap: var(--sp-sm);
+  }
+}
