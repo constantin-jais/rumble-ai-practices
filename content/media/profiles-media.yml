@@ -1,0 +1,714 @@
+# Fiches media-review (ADR 0004/0008) — import prototype.
+
+- id: "rumble_asset_0947.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_001). Audit biais requis."
+
+- id: "rumble_asset_0948.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_002). Audit biais requis."
+
+- id: "rumble_asset_0949.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_003). Audit biais requis."
+
+- id: "rumble_asset_0950.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_004). Audit biais requis."
+
+- id: "rumble_asset_0951.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_005). Audit biais requis."
+
+- id: "rumble_asset_0952.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_006). Audit biais requis."
+
+- id: "rumble_asset_0953.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_007). Audit biais requis."
+
+- id: "rumble_asset_0954.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_008). Audit biais requis."
+
+- id: "rumble_asset_0955.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_009). Audit biais requis."
+
+- id: "rumble_asset_0956.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_010). Audit biais requis."
+
+- id: "rumble_asset_0957.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_011). Audit biais requis."
+
+- id: "rumble_asset_0958.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_012). Audit biais requis."
+
+- id: "rumble_asset_0959.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_013). Audit biais requis."
+
+- id: "rumble_asset_0960.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_014). Audit biais requis."
+
+- id: "rumble_asset_0961.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_015). Audit biais requis."
+
+- id: "rumble_asset_0962.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_016). Audit biais requis."
+
+- id: "rumble_asset_0963.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_017). Audit biais requis."
+
+- id: "rumble_asset_0964.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_018). Audit biais requis."
+
+- id: "rumble_asset_0965.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_019). Audit biais requis."
+
+- id: "rumble_asset_0966.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_020). Audit biais requis."
+
+- id: "rumble_asset_0967.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_021). Audit biais requis."
+
+- id: "rumble_asset_0968.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_022). Audit biais requis."
+
+- id: "rumble_asset_0969.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_023). Audit biais requis."
+
+- id: "rumble_asset_0970.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_024). Audit biais requis."
+
+- id: "rumble_asset_0971.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_025). Audit biais requis."
+
+- id: "rumble_asset_0972.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_026). Audit biais requis."
+
+- id: "rumble_asset_0973.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_027). Audit biais requis."
+
+- id: "rumble_asset_0974.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_028). Audit biais requis."
+
+- id: "rumble_asset_0975.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_029). Audit biais requis."
+
+- id: "rumble_asset_0976.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_030). Audit biais requis."
+
+- id: "rumble_asset_0977.svg"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: ""
+  purpose: "Support pédagogique — média synthétique à analyser."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance hors repo."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected: []
+    representation_risks:
+      - "Média synthétique — représentation à auditer."
+    protected_attributes_inferred: []
+    realism_risk: medium
+    deepfake_confusion_risk: medium
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (pf_031). Audit biais requis."
