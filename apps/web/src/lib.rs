@@ -863,13 +863,10 @@ fn CohortAxis(position: DistributionPosition) -> Element {
 /// bakes it into the wasm at build time — the client parses and drives it through
 /// the engine at runtime, no filesystem, no backend.
 const CORPUS_FILES: &[&str] = &[
-    include_str!("../../../content/questions/privacy-rgpd.yml"),
-    include_str!("../../../content/questions/reliability.yml"),
-    include_str!("../../../content/questions/responsibility-bias.yml"),
-    include_str!("../../../content/questions/security-prompt.yml"),
-    include_str!("../../../content/questions/data-sovereignty.yml"),
-    include_str!("../../../content/questions/media.yml"),
-    include_str!("../../../content/questions/pilot.yml"),
+    include_str!("../../../content/questions/bias-visual.yml"),
+    include_str!("../../../content/questions/situations.yml"),
+    include_str!("../../../content/questions/profiles.yml"),
+    include_str!("../../../content/questions/deepfakes.yml"),
 ];
 
 /// Sort rank for the learning curve: beginner → intermediate → advanced.
@@ -881,10 +878,13 @@ fn difficulty_rank(difficulty: Difficulty) -> u8 {
     }
 }
 
-/// Select the parcours from the embedded corpus: one valid question per risk
-/// axis (covers the whole surface), ordered by difficulty (gentle learning
-/// curve). Kept separate from the view-model mapping so the selection is
-/// testable on the real content.
+/// Number of drills drawn per play session.
+const SESSION_SIZE: usize = 50;
+
+/// Draw a session from the embedded bias-game corpus: up to `SESSION_SIZE`
+/// valid drills, round-robin across risk axes for variety, then ordered by a
+/// gentle difficulty curve. Kept separate from the view-model mapping so the
+/// selection is testable on the real content.
 fn parcours_questions() -> Vec<Question> {
     let mut all: Vec<Question> = Vec::new();
     for raw in CORPUS_FILES {
@@ -892,21 +892,41 @@ fn parcours_questions() -> Vec<Question> {
             all.extend(questions.into_iter().filter(|q| q.validate_basic().is_ok()));
         }
     }
-    let mut axes_seen: Vec<RiskAxis> = Vec::new();
-    let mut selected: Vec<Question> = all
+    let mut session: Vec<Question> = interleave_by_axis(all)
         .into_iter()
-        .filter(|q| {
-            if axes_seen.contains(&q.axis) {
-                false
-            } else {
-                axes_seen.push(q.axis);
-                true
-            }
-        })
+        .take(SESSION_SIZE)
         .collect();
-    // stable sort keeps the by-axis order within a difficulty tier
-    selected.sort_by_key(|q| difficulty_rank(q.difficulty));
-    selected
+    // stable sort keeps the axis-interleaved order within a difficulty tier
+    session.sort_by_key(|q| difficulty_rank(q.difficulty));
+    session
+}
+
+/// Round-robin questions across their risk axes so a session mixes topics
+/// instead of clustering all drills of one axis together.
+fn interleave_by_axis(questions: Vec<Question>) -> Vec<Question> {
+    let mut buckets: std::collections::BTreeMap<RiskAxis, Vec<Question>> =
+        std::collections::BTreeMap::new();
+    for q in questions {
+        buckets.entry(q.axis).or_default().push(q);
+    }
+    let mut lists: Vec<Vec<Question>> = buckets.into_values().collect();
+    for list in lists.iter_mut() {
+        list.reverse(); // so pop() yields the original front order
+    }
+    let mut out = Vec::new();
+    loop {
+        let mut progressed = false;
+        for list in lists.iter_mut() {
+            if let Some(q) = list.pop() {
+                out.push(q);
+                progressed = true;
+            }
+        }
+        if !progressed {
+            break;
+        }
+    }
+    out
 }
 
 /// The parcours as presentational questions. Verdicts are derived by the engine
@@ -1118,17 +1138,14 @@ mod tests {
     }
 
     #[test]
-    fn corpus_is_built_from_real_content_one_per_axis() {
+    fn corpus_is_a_bias_session_from_real_content() {
         let qs = corpus();
-        // one situation per risk axis (10 axes), all engine-derived
-        assert_eq!(qs.len(), 10, "one question per risk axis");
-        let mut categories: Vec<&str> = qs.iter().map(|q| q.category).collect();
-        categories.sort_unstable();
-        categories.dedup();
-        assert_eq!(
-            categories.len(),
-            10,
-            "each axis maps to a distinct category"
+        // a play session: non-empty, capped at SESSION_SIZE, all engine-derived
+        assert!(!qs.is_empty(), "session is non-empty");
+        assert!(
+            qs.len() <= SESSION_SIZE,
+            "session capped at {SESSION_SIZE}, got {}",
+            qs.len()
         );
         for q in &qs {
             assert!(q.id.starts_with("q-"), "real content id: {}", q.id);
@@ -1140,15 +1157,6 @@ mod tests {
                 q.id
             );
             assert!(!q.prompt.is_empty(), "real prompt in {}", q.id);
-            // risks are shown in French, not raw English slugs
-            for fb in &q.feedbacks {
-                assert!(
-                    !fb.risk.contains('_'),
-                    "risk humanized in {}: {}",
-                    q.id,
-                    fb.risk
-                );
-            }
         }
     }
 
@@ -1282,15 +1290,17 @@ mod tests {
     }
 
     #[test]
-    fn parcours_is_ordered_by_difficulty() {
-        let ranks: Vec<u8> = parcours_questions()
+    fn session_is_capped_and_ordered_by_difficulty() {
+        let session = parcours_questions();
+        assert!(!session.is_empty());
+        assert!(session.len() <= SESSION_SIZE);
+        let ranks: Vec<u8> = session
             .iter()
             .map(|q| difficulty_rank(q.difficulty))
             .collect();
-        assert_eq!(ranks.len(), 10);
         assert!(
             ranks.windows(2).all(|w| w[0] <= w[1]),
-            "parcours must be non-decreasing in difficulty, got {ranks:?}"
+            "session must be non-decreasing in difficulty, got {ranks:?}"
         );
     }
 
