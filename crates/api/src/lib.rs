@@ -255,12 +255,14 @@ fn enforce_session_limit(sessions: &mut BTreeMap<String, StoredSession>) {
 async fn security_headers(request: Request<axum::body::Body>, next: Next) -> Response {
     let mut response = next.run(request).await;
     let headers = response.headers_mut();
-    // CSP: script-src 'self' only. Wasm instantiation via ES module does not require
-    // 'wasm-unsafe-eval' in dx 0.7.9 (uses native instantiation). If a runtime CSP
-    // violation is observed, add it then (not speculatively).
+    // CSP. `script-src` needs 'wasm-unsafe-eval': dx 0.7.9 boots the app through
+    // WebAssembly.instantiateStreaming, which Chrome blocks under a bare
+    // `script-src 'self'` (observed at runtime — the app never mounts, blank page).
+    // This directive permits WASM compilation only, NOT arbitrary JS eval, so the
+    // hardening stays intact.
     headers.insert(
         HeaderName::from_static("content-security-policy"),
-        HeaderValue::from_static("default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"),
+        HeaderValue::from_static("default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"),
     );
     headers.insert(
         HeaderName::from_static("x-content-type-options"),
@@ -760,7 +762,18 @@ mod tests {
             .await
             .unwrap();
         assert_eq!(response.status(), StatusCode::OK);
-        assert!(response.headers().contains_key("content-security-policy"));
+        let csp = response
+            .headers()
+            .get("content-security-policy")
+            .unwrap()
+            .to_str()
+            .unwrap();
+        // wasm-unsafe-eval is required for dx's WebAssembly.instantiateStreaming;
+        // without it Chrome blocks the module and the PWA never mounts (blank page)
+        assert!(
+            csp.contains("'wasm-unsafe-eval'"),
+            "CSP must allow WASM instantiation, got: {csp}"
+        );
         assert_eq!(
             response.headers().get("x-content-type-options").unwrap(),
             "nosniff"
