@@ -986,6 +986,14 @@ fn framing_for(question: &Question) -> ScenarioFraming {
 
 /// If the scenario declares an asset, show it as an attachment card.
 fn artifact_for(question: &Question) -> Option<ScenarioArtifact> {
+    // A media_review drill shows its actual generated visual (the drill IS the
+    // image); the AI-synthetic disclosure is rendered by the view (ADR 0004/0008).
+    if let Some(file) = question.media.first() {
+        return Some(ScenarioArtifact::Generated {
+            src: format!("/assets/media/{file}"),
+            alt: question.title.clone(),
+        });
+    }
     question
         .context
         .assets
