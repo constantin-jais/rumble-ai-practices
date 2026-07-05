@@ -1,0 +1,1299 @@
+# Fiches media-review (ADR 0004/0008) — corpus biais visuels (import prototype).
+# id = nom de fichier de l'asset (matche question.media[]).
+# status: draft, decision: rework — audit biais humain requis avant publication.
+# Provenance/droits conservés hors repo (preuve de droits).
+
+- id: "rumble_asset_0244.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un homme africain"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Origine / ethnie"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Origine / ethnie."
+    protected_attributes_inferred:
+      - "Origine / ethnie"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_001). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0245.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une personne âgée qui utilise un ordinateur"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Âge"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Âge."
+    protected_attributes_inferred:
+      - "Âge"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_002). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0246.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un couple qui mange au fast-food"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Corpulence"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Corpulence."
+    protected_attributes_inferred:
+      - "Corpulence"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_003). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0247.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un poste d'accueil"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_004). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0248.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un homme gay au bureau"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_005). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0249.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une personne allemande"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Origine / ethnie"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Origine / ethnie."
+    protected_attributes_inferred:
+      - "Origine / ethnie"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_006). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0250.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une personne sans-abri"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Statut social"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Statut social."
+    protected_attributes_inferred:
+      - "Statut social"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_007). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0251.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un influenceur"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_008). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0252.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une personne italienne"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Origine / ethnie"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Origine / ethnie."
+    protected_attributes_inferred:
+      - "Origine / ethnie"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_009). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0253.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un homme viril"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_010). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0254.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un scientifique"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Statut social"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Statut social."
+    protected_attributes_inferred:
+      - "Statut social"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_011). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0255.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une personne mexicaine"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Origine / ethnie"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Origine / ethnie."
+    protected_attributes_inferred:
+      - "Origine / ethnie"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_012). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0256.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une femme musulmane"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Origine / ethnie"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_013). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0257.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une femme au volant"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_014). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0258.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un cadre africain"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+      - "Origine / ethnie"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_015). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0259.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une coureuse"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+      - "Corpulence"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_016). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0260.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un PDG"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+      - "Genre"
+      - "Origine / ethnie"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_017). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0261.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un leader"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+      - "Genre"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_018). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0262.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un chirurgien"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+      - "Genre"
+      - "Origine / ethnie"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_019). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0263.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un infirmier"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_020). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0264.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une personne en cuisine"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+      - "Genre"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_021). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0265.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un cycliste senior"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+      - "Âge"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_022). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0266.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un expert en informatique"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Âge"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Âge."
+    protected_attributes_inferred:
+      - "Âge"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_023). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0267.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "des adolescents"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+      - "Âge"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_024). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0268.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un chauffeur de poids lourd"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_025). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0269.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un comité de direction de banque"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Âge"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_026). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0270.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un conseil municipal"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_027). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0271.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un comité exécutif"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Origine / ethnie"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Origine / ethnie."
+    protected_attributes_inferred:
+      - "Origine / ethnie"
+      - "Genre"
+      - "Âge"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_028). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0272.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une équipe de développeurs"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_029). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0273.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une rédaction"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_030). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0274.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un cabinet d'avocats"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Âge"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_031). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0275.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une équipe de recherche pharmaceutique"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_032). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0276.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une tribune VIP"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Statut social"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_033). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0277.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "les intervenants d'une conférence tech"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_034). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0278.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une salle de marché"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_035). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0279.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un panel d'experts"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_036). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0280.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une agence d'architecture"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_037). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0281.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un conseil municipal"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_038). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0282.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un comité exécutif"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_039). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0283.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une équipe de développeurs"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_040). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0284.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une réunion stratégique"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_041). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0285.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une rédaction"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_042). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0286.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une équipe de tournage"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_043). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0287.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une instance publique"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_044). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0288.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un jury"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_045). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0289.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une équipe hospitalière"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_046). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0290.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une équipe de maintenance"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Genre"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Genre."
+    protected_attributes_inferred:
+      - "Genre"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_047). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0291.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "un panel"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+      - "Âge"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_048). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0292.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une équipe de recherche"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Handicap"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Handicap."
+    protected_attributes_inferred:
+      - "Handicap"
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_049). Audit biais humain requis avant passage en approved."
+
+- id: "rumble_asset_0293.webp"
+  status: draft
+  type: image
+  origin: generated_ai
+  model: null
+  prompt: "une audience d'investisseurs"
+  purpose: "Support pédagogique — analyse d'un biais de représentation sur un média synthétique."
+  contains_human_like_person: true
+  consent_or_rights: "Droits acquis ; provenance conservée hors repo (preuve de droits)."
+  labels:
+    synthetic_disclosed: true
+    watermark_required: true
+  bias_review:
+    stereotypes_detected:
+      - "Échantillonnage statistique"
+    representation_risks:
+      - "Biais de représentation sur l'axe : Échantillonnage statistique."
+    protected_attributes_inferred:
+      - "Échantillonnage statistique"
+    realism_risk: medium
+    deepfake_confusion_risk: low
+    reviewer: TBD
+    decision: rework
+    notes: "Import prototype (bias-visual bv_050). Audit biais humain requis avant passage en approved."
