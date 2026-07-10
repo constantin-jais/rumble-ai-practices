@@ -54,6 +54,8 @@ async function completeParcours(page: import("@playwright/test").Page): Promise<
     const choice = page.locator('.choice[data-key="2"]');
     await choice.click();
     await choice.click();
+    // Wait for the continue button to appear (verdict rendered) before clicking
+    await page.locator('[data-action="continue"]').waitFor({ state: "visible" });
     await page.locator('[data-action="continue"]').click();
   }
   return total;
